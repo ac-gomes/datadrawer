@@ -33,7 +33,7 @@ setwd(Sources)
    #Initialize dataset
    Dataset <-read_excel(My.Files[1])
    
-   
+   #Marge all files
    for (f in My.Files[-1]) {
      
       Current.File <-  read_excel(f)

@@ -1,8 +1,7 @@
-#Autenticação com firebase
-#https://www.youtube.com/results?search_query=authentication+using+firebase
+
 #Autor: https://www.linkedin.com/in/antoniocgomes/
 
-
+#Library
 library(googledrive)
 library(readxl)
 library(jsonlite)
@@ -35,7 +34,7 @@ setwd(Sources)
    Dataset <-read_excel(My.Files[1])
    
    
-   for (f in My.Files) {
+   for (f in My.Files[-1]) {
      
       Current.File <-  read_excel(f)
       
@@ -46,7 +45,7 @@ setwd(Sources)
      
    }
  
-#Remove all variable 
+#Remove all variables 
 rm(list=setdiff(ls(), 'Dataset'))
 
 

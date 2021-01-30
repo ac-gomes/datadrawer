@@ -1,3 +1,6 @@
+
+App desenvolvido com os dados da API: https://datadrawer.shinyapps.io/dflights/
+
 # GetDataFromOpenSkyNetworkAPI
 Os arquivos que contem os dados de login são no formato Json, abaixo alguns detalhes relevantes.
 

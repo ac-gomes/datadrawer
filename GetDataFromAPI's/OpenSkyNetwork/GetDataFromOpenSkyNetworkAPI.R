@@ -99,3 +99,4 @@ sources <- paste(getwd(),'dados',sep = "/")
 #'Para carrega os dados ja transformados no Power BI ou outra ferramenta que tenha integracao com R
 #'Comente a linha abaixo
 write.table(dados.Opensky, file='Opensky_Result.csv', sep=',', dec='.', row.names=FALSE)
+

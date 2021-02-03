@@ -1,5 +1,5 @@
 
-#Script para gerar tabela 'calendario' com periodos do ano fiscal
+#Script to generate calendar table with fiscal year periods 
 
 #install or load packges
 packages <- c("tibble", "dplyr", "lubridate", "stringr")

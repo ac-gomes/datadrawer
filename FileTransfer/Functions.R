@@ -50,9 +50,9 @@ getNewfile <- function(pattern){
   setwd(sourcePath)
   Term <- pattern
   filesNew  <- file.info(list.files(pattern = Term ))
-  nomeArquivo  <- row.names(filesNew)
+  latestFiles  <- row.names(filesNew)
 
-  if (!is.null(nomeArquivo)){
+  if (!is.null(latestFiles)){
     
     
    out <- file.copy(paste(sourcePath,newFileName,sep="/"),destinationPath)

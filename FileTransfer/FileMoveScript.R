@@ -1,5 +1,5 @@
 #Script to move files between directories
-#Versão 0.1
+#Version 0.1
 
 
 #Call functions

@@ -1,5 +1,6 @@
 
 #Script to generate calendar table with fiscal year periods 
+setwd("C:/Users/Antonio/OneDrive/R/datadrawer/Calendar")
 
 #install or load packges
 packages <- c("tibble", "dplyr", "lubridate", "stringr")
@@ -29,6 +30,7 @@ dCalendar <- dateInterval %>%
                     FiscalQuarter = paste0("Q", quarter(value, fiscal_start = fiscalStart)),
                     CalendarYear = year(value),
                     FiscalYear =  str_sub(quarter(value, with_year = TRUE, fiscal_start = fiscalStart),1,4),
+                    
                     FiscalPeriod = case_when(
                           Month == 1  ~ "P04",
                           Month == 2  ~ "P05",
@@ -44,4 +46,3 @@ dCalendar <- dateInterval %>%
                           Month == 12 ~ "P03"
                         )
                 )
-
